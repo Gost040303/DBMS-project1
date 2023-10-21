@@ -1,0 +1,93 @@
+<!-- DBMS project - DineData -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>DineData</title>
+</head>
+
+<body>
+
+    <!-- navigationBar -->
+    <nav class="nav-bar" id="navbar">
+            <h1><img src="./images/logo.png" alt="">DineData</h1>
+        <ul>
+            <li>Food Ordering</li>
+            <li>RESTAURANT SERVICES</li>
+            <li>PRICING</li>
+            <li><a href="">LOG IN</a></li>
+            <li><a href="">GET ACCESS NOW</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="main-container">
+        <div class="sidePannel">
+            <h2>Filter By Category</h2>
+            <select id="categoryFilter" onchange="filterFoodCards()">
+              <option value="all">All</option>
+              <option value="appetizer">Appetizer</option>
+              <option value="main_course">Main Course</option>
+              <option value="dessert">Dessert</option>
+            </select>
+          </div>
+          
+        <div class="mainPannel">
+            <div class="foodPannel">
+                  
+            <div class="foodCard"  data-category="main_course">
+
+            </div>
+            <div class="foodCard"  data-category="appetizer">
+
+            </div>
+            <div class="foodCard"  data-category="appetizer">
+
+            </div>
+            <div class="foodCard"  data-category="main_course">
+
+            </div>
+            <div class="foodCard"  data-category="appetizer">
+
+            </div>
+            <div class="foodCard"  data-category="main_course">
+
+            </div>
+            <div class="foodCard" data-category="dessert">
+
+            </div>
+            <div class="foodCard" data-category="dessert">
+
+            </div>
+            <div class="foodCard" data-category="dessert">
+
+            </div>
+            <div class="foodCard" data-category="dessert">
+
+            </div>
+            <div class="foodCard" data-category="dessert">
+
+            </div>
+            <div class="foodCard"  data-category="main_course">
+
+            </div>
+
+        
+        
+            </div>
+            <button id="loadMoreBtn" onclick="loadMoreContent()">Load More</button>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

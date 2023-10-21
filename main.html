@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>DineData</title>
 </head>
 
@@ -28,54 +28,73 @@
     <div class="main-container">
         <div class="sidePannel">
 
-            <div class="filter">Ratings</div>
-            <div class="filter">Price</div>
-            <div class="filter">Menu</div>
-            <div class="filter">Type</div>
-            <div class="filter"></div>
-            <div class="filter"></div>
+            <select id="categoryFilterRating" >
+                <option value="all">Rating</option>
+                <option value="fivePlus">5 & +</option>
+                <option value="fourPlus">4 & +</option>
+                <option value="threePlus">3 & +</option>
+                <option value="twoPlus">2 & +</option>
+                <option value="onePlus">1 & +</option>
+            </select>
+            <select id="categoryFilterOrderTpye" onchange="filterFoodCardOrderTpye()">
+                <option value="all">Order Type</option>
+                <option value="veg">In Veg</option>
+                <option value="nonVeg">nonVeg</option>
+            </select>             
+            <select id="categoryFilterTpye" onchange="filterFoodCardTpye()">
+                <option value="all">Type</option>
+                <option value="appetizer">Appetizer</option>
+                <option value="mainCourse">Main Course</option>
+                <option value="dessert">Dessert</option>
+            </select>
+            <!-- <select id="categoryFilterPrice" >
+                <option value="all">Price</option>
+                <option value="appetizer">High</option>
+                <option value="mainCourse">Moderate</option>
+                <option value="dessert">Low</option>
+            </select> -->
     
 
         </div>
         <div class="mainPannel">
             <div class="foodPannel">
                   
-            <div class="foodCard">
+                <div class="foodCard"  data-category="mainCourse" data-order-type-category="veg">
 
-            </div>
-            <div class="foodCard">
-
-            </div>
-            <div class="foodCard">
-
-            </div>
-            <div class="foodCard">
-
-            </div>
-            <div class="foodCard">
-
-            </div>
-            <div class="foodCard">
-
-            </div>
-            <div class="foodCard">
-
-            </div>
-            <div class="foodCard">
-
-            </div>
-            <div class="foodCard">
-
-            </div>
-            <div class="foodCard">
-
-            </div>
-            <div class="foodCard">
-
-            </div>
-            <div class="foodCard">
-
-            </div>
+                </div>
+                <div class="foodCard"  data-category="appetizer" data-order-type-category="nonVeg">
+    
+                </div>
+                <div class="foodCard"  data-category="appetizer" data-order-type-category="veg">
+    
+                </div>
+                <div class="foodCard"  data-category="mainCourse" data-order-type-category="veg">
+    
+                </div>
+                <div class="foodCard"  data-category="appetizer" data-order-type-category="veg">
+    
+                </div>
+                <div class="foodCard"  data-category="mainCourse" data-order-type-category="nonVeg">
+    
+                </div>
+                <div class="foodCard" data-category="appetizer" data-order-type-category="nonVeg">
+    
+                </div>
+                <div class="foodCard" data-category="dessert" data-order-type-category="veg">
+    
+                </div>
+                <div class="foodCard" data-category="dessert" data-order-type-category="veg">
+    
+                </div>
+                <div class="foodCard" data-category="dessert" data-order-type-category="veg">
+    
+                </div>
+                <div class="foodCard" data-category="dessert" data-order-type-category="veg">
+    
+                </div>
+                <div class="foodCard"  data-category="mainCourse" data-order-type-category="nonVeg">
+    
+                </div>
 
         
         
@@ -88,7 +107,7 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
