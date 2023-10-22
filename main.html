@@ -28,75 +28,73 @@
     <div class="main-container">
         <div class="sidePannel">
 
-            <select id="categoryFilterRating" >
+            <select id="categoryFilterRating" onchange="filterFoodCards()">
                 <option value="all">Rating</option>
-                <option value="fivePlus">5 & +</option>
                 <option value="fourPlus">4 & +</option>
                 <option value="threePlus">3 & +</option>
                 <option value="twoPlus">2 & +</option>
                 <option value="onePlus">1 & +</option>
             </select>
-            <select id="categoryFilterOrderTpye" onchange="filterFoodCardOrderTpye()">
+            <select id="categoryFilterOrderTpye" onchange="filterFoodCards()">
                 <option value="all">Order Type</option>
                 <option value="veg">In Veg</option>
                 <option value="nonVeg">nonVeg</option>
-            </select>             
-            <select id="categoryFilterTpye" onchange="filterFoodCardTpye()">
+            </select>
+            <select id="categoryFilterTpye" onchange="filterFoodCards()">
                 <option value="all">Type</option>
                 <option value="appetizer">Appetizer</option>
                 <option value="mainCourse">Main Course</option>
                 <option value="dessert">Dessert</option>
             </select>
+            
             <!-- <select id="categoryFilterPrice" >
                 <option value="all">Price</option>
                 <option value="appetizer">High</option>
                 <option value="mainCourse">Moderate</option>
                 <option value="dessert">Low</option>
             </select> -->
-    
+            <a href="./index.html"><h1>Home link</h1></a>
 
         </div>
         <div class="mainPannel">
             <div class="foodPannel">
                   
-                <div class="foodCard"  data-category="mainCourse" data-order-type-category="veg">
+                <div class="foodCard"  data-category="mainCourse" data-order-type-category="veg" data-rating-category = "fourPlus">
 
                 </div>
-                <div class="foodCard"  data-category="appetizer" data-order-type-category="nonVeg">
+                <div class="foodCard"  data-category="appetizer" data-order-type-category="nonVeg" data-rating-category = "threePlus">
     
                 </div>
-                <div class="foodCard"  data-category="appetizer" data-order-type-category="veg">
+                <div class="foodCard"  data-category="appetizer" data-order-type-category="veg" data-rating-category = "fourPlus">
     
                 </div>
-                <div class="foodCard"  data-category="mainCourse" data-order-type-category="veg">
+                <div class="foodCard"  data-category="mainCourse" data-order-type-category="veg" data-rating-category = "threePlus">
     
                 </div>
-                <div class="foodCard"  data-category="appetizer" data-order-type-category="veg">
+                <div class="foodCard"  data-category="appetizer" data-order-type-category="veg" data-rating-category = "fourPlus">
     
                 </div>
-                <div class="foodCard"  data-category="mainCourse" data-order-type-category="nonVeg">
+                <div class="foodCard"  data-category="mainCourse" data-order-type-category="nonVeg" data-rating-category = "threePlus">
     
                 </div>
-                <div class="foodCard" data-category="appetizer" data-order-type-category="nonVeg">
+                <div class="foodCard" data-category="appetizer" data-order-type-category="nonVeg" data-rating-category = "fourPlus">
     
                 </div>
-                <div class="foodCard" data-category="dessert" data-order-type-category="veg">
+                <div class="foodCard" data-category="dessert" data-order-type-category="veg" data-rating-category = "twoPlus">
     
                 </div>
-                <div class="foodCard" data-category="dessert" data-order-type-category="veg">
+                <div class="foodCard" data-category="dessert" data-order-type-category="veg" data-rating-category = "onePlus">
     
                 </div>
-                <div class="foodCard" data-category="dessert" data-order-type-category="veg">
+                <div class="foodCard" data-category="dessert" data-order-type-category="veg" data-rating-category = "threePlus">
     
                 </div>
-                <div class="foodCard" data-category="dessert" data-order-type-category="veg">
+                <div class="foodCard" data-category="dessert" data-order-type-category="veg" data-rating-category = "onePlus">
     
                 </div>
-                <div class="foodCard"  data-category="mainCourse" data-order-type-category="nonVeg">
+                <div class="foodCard"  data-category="mainCourse" data-order-type-category="nonVeg" data-rating-category = "twoPlus">
     
                 </div>
-
-        
         
             </div>
             <button id="loadMoreBtn" onclick="loadMoreContent()">Load More</button>
